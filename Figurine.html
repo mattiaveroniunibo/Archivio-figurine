@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivio Figurine - Tutte le Decadi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Collezione Figurine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Serie.html">Serie</a></li>
+                <li><a href="Curiosita.html">Curiosità</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Figurine</li>
+            </ol>
+        </nav>
+
+        <!-- Bottoni per le decadi con Bootstrap Tabs -->
+        <ul class="nav nav-tabs" id="decadeTabs" role="tablist">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#anni60">Anni '60</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#anni70">Anni '70</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#anni80">Anni '80</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#anni90">Anni '90</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#anni2000">Anni 2000</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#anni2010">Anni 2010</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#anni2020">Anni 2020</button></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="anni60">
+                <h3>Anni '60</h3>
+                
+<!-- Barra di ricerca per filtrare le figurine -->
+<div style="margin-bottom: 15px; text-align: center;">
+    <input type="text" id="searchBar" placeholder="Cerca una figurina..." onkeyup="filterFigurine()" 
+           style="width: 80%; padding: 10px; font-size: 18px; border: 1px solid #ccc; border-radius: 5px;">
+</div>
+
+<script>
+function filterFigurine() {
+    var input = document.getElementById("searchBar").value.toLowerCase();
+    var images = document.querySelectorAll(".gallery img");
+
+    images.forEach(function(img) {
+        var altText = img.alt.toLowerCase();
+        if (altText.includes(input)) {
+            img.style.display = "inline-block";
+        } else {
+            img.style.display = "none";
+        }
+    });
+}
+</script>
+
+<div class="gallery">
+                    <img src="img/pizzaballa.png" alt="Pierluigi Pizzaballa">
+                    <img src="img/rivera.png" alt="Gianni Rivera">
+                    <img src="img/trapattoni.jpg" alt="Giovanni Trapattoni">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="anni70">
+                <h3>Anni '70</h3>
+                
+<!-- Barra di ricerca per filtrare le figurine -->
+<div style="margin-bottom: 15px; text-align: center;">
+    <input type="text" id="searchBar" placeholder="Cerca una figurina..." onkeyup="filterFigurine()" 
+           style="width: 80%; padding: 10px; font-size: 18px; border: 1px solid #ccc; border-radius: 5px;">
+</div>
+
+<script>
+function filterFigurine() {
+    var input = document.getElementById("searchBar").value.toLowerCase();
+    var images = document.querySelectorAll(".gallery img");
+
+    images.forEach(function(img) {
+        var altText = img.alt.toLowerCase();
+        if (altText.includes(input)) {
+            img.style.display = "inline-block";
+        } else {
+            img.style.display = "none";
+        }
+    });
+}
+</script>
+
+<div class="gallery">
+                    <img src="img/cuccureddu.png" alt="Antonello Cuccureddu">
+                    <img src="img/gigi_riva.jpg" alt="Gigi Riva">
+                    <img src="img/mazzola.jpg" alt="Sandro Mazzola">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="anni80">
+                <h3>Anni '80</h3>
+                
+<!-- Barra di ricerca per filtrare le figurine -->
+<div style="margin-bottom: 15px; text-align: center;">
+    <input type="text" id="searchBar" placeholder="Cerca una figurina..." onkeyup="filterFigurine()" 
+           style="width: 80%; padding: 10px; font-size: 18px; border: 1px solid #ccc; border-radius: 5px;">
+</div>
+
+<script>
+function filterFigurine() {
+    var input = document.getElementById("searchBar").value.toLowerCase();
+    var images = document.querySelectorAll(".gallery img");
+
+    images.forEach(function(img) {
+        var altText = img.alt.toLowerCase();
+        if (altText.includes(input)) {
+            img.style.display = "inline-block";
+        } else {
+            img.style.display = "none";
+        }
+    });
+}
+</script>
+
+<div class="gallery">
+                    <img src="img/baresi.jpg" alt="Franco Baresi">
+                    <img src="img/maradona.jpg" alt="Diego Maradona">
+                    <img src="img/platini.png" alt="Michel Platini">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="anni90">
+                <h3>Anni '90</h3>
+                
+<!-- Barra di ricerca per filtrare le figurine -->
+<div style="margin-bottom: 15px; text-align: center;">
+    <input type="text" id="searchBar" placeholder="Cerca una figurina..." onkeyup="filterFigurine()" 
+           style="width: 80%; padding: 10px; font-size: 18px; border: 1px solid #ccc; border-radius: 5px;">
+</div>
+
+<script>
+function filterFigurine() {
+    var input = document.getElementById("searchBar").value.toLowerCase();
+    var images = document.querySelectorAll(".gallery img");
+
+    images.forEach(function(img) {
+        var altText = img.alt.toLowerCase();
+        if (altText.includes(input)) {
+            img.style.display = "inline-block";
+        } else {
+            img.style.display = "none";
+        }
+    });
+}
+</script>
+
+<div class="gallery">
+                    <img src="img/roberto_baggio.avif" alt="Roberto Baggio">
+                    <img src="img/gullit.jpeg" alt="Ruud Gullit">
+                    <img src="img/van_basten.jpg" alt="Marco van Basten">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="anni2000">
+                <h3>Anni 2000</h3>
+                
+<!-- Barra di ricerca per filtrare le figurine -->
+<div style="margin-bottom: 15px; text-align: center;">
+    <input type="text" id="searchBar" placeholder="Cerca una figurina..." onkeyup="filterFigurine()" 
+           style="width: 80%; padding: 10px; font-size: 18px; border: 1px solid #ccc; border-radius: 5px;">
+</div>
+
+<script>
+function filterFigurine() {
+    var input = document.getElementById("searchBar").value.toLowerCase();
+    var images = document.querySelectorAll(".gallery img");
+
+    images.forEach(function(img) {
+        var altText = img.alt.toLowerCase();
+        if (altText.includes(input)) {
+            img.style.display = "inline-block";
+        } else {
+            img.style.display = "none";
+        }
+    });
+}
+</script>
+
+<div class="gallery">
+                    <img src="img/del_piero.webp" alt="Alessandro Del Piero">
+                    <img src="img/pirlo.png" alt="Andrea Pirlo">
+                    <img src="img/totti.webp" alt="Francesco Totti">
+                    
+                </div>
+            </div>
+            <div class="tab-pane fade" id="anni2010">
+                <h3>Anni 2010</h3>
+                
+<!-- Barra di ricerca per filtrare le figurine -->
+<div style="margin-bottom: 15px; text-align: center;">
+    <input type="text" id="searchBar" placeholder="Cerca una figurina..." onkeyup="filterFigurine()" 
+           style="width: 80%; padding: 10px; font-size: 18px; border: 1px solid #ccc; border-radius: 5px;">
+</div>
+
+<script>
+function filterFigurine() {
+    var input = document.getElementById("searchBar").value.toLowerCase();
+    var images = document.querySelectorAll(".gallery img");
+
+    images.forEach(function(img) {
+        var altText = img.alt.toLowerCase();
+        if (altText.includes(input)) {
+            img.style.display = "inline-block";
+        } else {
+            img.style.display = "none";
+        }
+    });
+}
+</script>
+
+<div class="gallery">
+                    <img src="img/icardi.jpeg" alt="Mauro Icardi">
+                    <img src="img/buffon2.jpeg" alt="Gianluigi Buffon">
+                    <img src="img/cristiano_ronaldo.jpg" alt="cristiano_ronaldo">
+                    
+                </div>
+            </div>
+            <div class="tab-pane fade" id="anni2020">
+                <h3>Anni 2020</h3>
+                
+<!-- Barra di ricerca per filtrare le figurine -->
+<div style="margin-bottom: 15px; text-align: center;">
+    <input type="text" id="searchBar" placeholder="Cerca una figurina..." onkeyup="filterFigurine()" 
+           style="width: 80%; padding: 10px; font-size: 18px; border: 1px solid #ccc; border-radius: 5px;">
+</div>
+
+<script>
+function filterFigurine() {
+    var input = document.getElementById("searchBar").value.toLowerCase();
+    var images = document.querySelectorAll(".gallery img");
+
+    images.forEach(function(img) {
+        var altText = img.alt.toLowerCase();
+        if (altText.includes(input)) {
+            img.style.display = "inline-block";
+        } else {
+            img.style.display = "none";
+        }
+    });
+}
+</script>
+
+<div class="gallery">
+                    <img src="img/lautaro.jpeg" alt="Lautaro Martinez">
+                    <img src="img/yildiz.jpeg" alt="Kenan Yildiz">
+                    <img src="img/dybala.jpeg" alt="Paulo Dybala">
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
